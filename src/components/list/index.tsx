@@ -36,7 +36,9 @@ export default function ListItemComp({
           renderItem={({item}) => (
             <View style={horizontal ? styles.itemHorizontal : styles.item}>
               <Image source={{uri: item.image}} style={styles.image} />
-              <Text style={styles.itemTitle}>{item.title}</Text>
+              <Text style={styles.itemTitle} numberOfLines={1}>
+                {item.title}
+              </Text>
               <Text style={styles.itemAuthor}>{item.author}</Text>
             </View>
           )}

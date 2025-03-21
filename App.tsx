@@ -3,6 +3,7 @@ import {ScrollView, useColorScheme, View} from 'react-native';
 
 import LoginScreen from './src/screens/login';
 import HomeScreen from './src/screens/home';
+import DetailScreen from './src/screens/detail';
 
 function App(): React.JSX.Element {
   return (
@@ -11,7 +12,8 @@ function App(): React.JSX.Element {
         backgroundColor: '#fff',
       }}>
       {/* <LoginScreen /> */}
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      <DetailScreen />
     </ScrollView>
   );
 }
